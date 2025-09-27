@@ -1,15 +1,13 @@
+import os
 import torch
 import torch.nn as nn
-import torch.nn.functional as fn
 import torch.optim as optim
 import torch.utils.data as data
 import torchvision.transforms as transforms
-import torchvision.datasets as datasets
-from torchvision.datasets import MNIST # use MNIST data from torchvision
-import os
-from tqdm import tqdm
+from torchvision.datasets import MNIST
 import numpy as np
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 # CONFIG
 BATCH_SIZE = 128
