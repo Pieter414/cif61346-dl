@@ -61,7 +61,7 @@ class MNISTAE(nn.Module):
 ################ CREATE THE LOSS FUNCTION, OPTIMIZER, AND THE MODEL ##########################
 
 ae = MNISTAE().to(device)
-loss_function = nn.MSELoss()
+criterion = nn.MSELoss()
 optimizer = optim.Adam(ae.parameters(), lr=LR)
 
 ################ TRAIN THE MODEL #############################################################
