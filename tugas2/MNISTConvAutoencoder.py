@@ -62,7 +62,7 @@ class MNISTAE(nn.Module):
 
 ae = MNISTAE().to(device)
 loss_function = nn.MSELoss()
-adam = optim.SGD(ae.parameters(), lr=1e-3, momentum=0.9)
+optimizer = optim.Adam(ae.parameters(), lr=LR)
 
 ################ TRAIN THE MODEL #############################################################
 
